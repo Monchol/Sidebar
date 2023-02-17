@@ -146,3 +146,13 @@ header {
         color: #12a;
     }
 }
+@media screen and (max-height:300px){
+    .sidebar_item {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .sidebar_item:hover {
+        padding: 10px 30px;
+        transition: 250ms;
+    }
+}
