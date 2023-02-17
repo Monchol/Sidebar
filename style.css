@@ -28,7 +28,22 @@ a {
     background-color: #eee;
     position: fixed;
     z-index: 20;
+    animation-duration: 250ms;
+    animation-name: sidebarAnimationOpened;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
     transition: 250ms;
+}
+
+@keyframes sidebarAnimationOpened {
+    from {
+        margin-left: -100%;
+        width: 300px;
+    }
+
+    to {
+        margin-left: 0%;
+    }
 }
 
 #sidebar_header {
